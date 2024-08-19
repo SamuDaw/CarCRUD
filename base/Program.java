@@ -1,10 +1,6 @@
 package base;
 
-import java.util.List;
-
-import base.Car;
-import base.ShellMenu;
-import base.CarList;
+import base.Views.ShellMenu;
 
 public class Program {
     public static void main(String[] args) {
