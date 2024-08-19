@@ -35,7 +35,7 @@ public class CarList implements ICarList {
     public void addCar(Scanner scanner) {
         scanner.nextLine();
         System.out.println("Enter the car name (key): \n");
-        String name = readString(scanner);
+        String name = checkCarName(scanner);
         System.out.println("Enter the car description: \n");
         String description = readString(scanner);
         System.out.println("Enter the car horse power: \n");
@@ -171,5 +171,16 @@ public class CarList implements ICarList {
             car = hashMapCars.get(key);
         }
         return car;
+    }
+
+    public String checkCarName(Scanner scanner){
+        String key = readString(scanner);
+        Car car = hashMapCars.get(key);
+        while (car != null) {
+            System.out.println("Error, \"" + key + "\" name (key) already exists. Insert another one:");
+            key = readString(scanner);
+            car = hashMapCars.get(key);
+        }
+        return key;
     }
 }
