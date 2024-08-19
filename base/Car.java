@@ -48,7 +48,7 @@ public class Car {
     }
 
     public String toString(){
-        return "\n----------\n" + "Description: " + this.description + "\nHorse Power: " + this.horsePower + "\nWeight in Kg: " + this.weightInKg + "\nMax Speed: " + this.maxSpeed;
+        return "\n----------\n" + "Description: " + this.description + "\nHorse Power: " + this.horsePower + "\nWeight in Kg: " + this.weightInKg + "\nMax Speed: " + this.maxSpeed + "\n";
     }
 
 }
