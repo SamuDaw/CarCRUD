@@ -37,4 +37,6 @@ public interface ICarList {
     private Car getCarByKey(Scanner scanner){
         return null;
     }
+
+    public String checkCarName(Scanner scanner);
 }
